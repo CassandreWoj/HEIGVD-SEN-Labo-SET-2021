@@ -70,15 +70,15 @@ La capture d'écran ci-dessous montre mon adresse IP pour le POST back ainsi que
 
 Après avoir cloné le site, il faut se connecter sur `http://192.168.1.113:80` via le navigateur web pour obtenir la page de connexion sur le site cloné. Dessus, il faut entrer des identifiants : 
 
-![](images\SEN_ex1_connection.png)
+![](images/SEN_ex1_connection.png)
 
 En regardant de nouveau ce qu'il se passe dans le terminal, nous constatons que les informations parviennent effectivement en temps réel : 
 
-![](images\SEN_ex1_term_credz.png)
+![](images/SEN_ex1_term_credz.png)
 
 On retrouve ci-dessus l'adresse e-mail `imavictim@gmail.com` ainsi que le mot de passe entré dans le navigateur `victimized` dans les champs `POSSIBLE USERNAME / PASSWORD FIELD FOUND` en rouge au centre de la capture d'écran. On peut également retrouver ces informations dans le rapport généré à la fin de l'attaque : 
 
-![](images\SEN_ex1_credz.png)
+![](images/SEN_ex1_credz.png)
 
 
 
@@ -88,19 +88,19 @@ On retrouve ci-dessus l'adresse e-mail `imavictim@gmail.com` ainsi que le mot de
 
 Pour ce second exercice, nous essayons de créer un e-mail de phishing avec l'outil SET. 
 
-![](images\SEN_ex2_1.png)
+![](images/SEN_ex2_1.png)
 
 Nous choisissons donc l'option `Spear-phishing attack vectors` car c'est l'objectif qui est fixé dans cet exercice. Nous indiquons vouloir effectuer une attaque en envoyant des e-mails infectés. 
 
-![](images\SEN_ex2_2.png)
+![](images/SEN_ex2_2.png)
 
 22 payloads sont proposées pour effectuer cette attaque. Presque toutes les payloads présentes dans cette liste ont été testées, aucune n'a réussi à aller jusqu'au bout de l'attaque. Le même problème se déclare toujours au moment d'envoyer le mail infecté via gmail. 
 
-![](images\SEN_ex2_3.png)
+![](images/SEN_ex2_3.png)
 
 En continuant le processus, nous indiquons vouloir envoyer le mail de phishing à une seule adresse mail créée pour l'occasion en utilisant un modèle pré-défini proposé par SET. Nous indiquons également vouloir passer par notre propre compte gmail pour effectuer l'attaque :
 
-![](images\SEN_ex2_4.png)
+![](images/SEN_ex2_4.png)
 
 Notre adresse mail privée est entrée, ainsi que le mot de passe permettant d'y accéder, puis l'envoi du mail échoue avec l'erreur suivante : `Unable to connect to mail server. Try again (Internet issues ?)`. 
 
@@ -222,7 +222,7 @@ Content-Transfer-Encoding: 8bit
 
 L'envoyeur d'origine est le domaine `od-622c7e.infomaniak.ch` et avec quelques recherches rapides, on trouve des informations sur ce domaine : 
 
-![](images\ex3_smsgagnant.JPG) 
+![](images/ex3_smsgagnant.JPG) 
 
 On obtient l'adresse IP et la localisation des serveurs : en Ukraine. 
 
@@ -230,7 +230,7 @@ Le `Return-Path` est l'adresse <webmaster@sms-gagnant.ch>, qui ne correspond pas
 
 En utilisant l'outil Google d'administration (https://toolbox.googleapps.com/apps/messageheader/analyzeheader) pour analyser l'en-tête de ce mail, on obtient le retour suivant : 
 
-![](images\ex3_googletool.JPG)
+![](images/ex3_googletool.JPG)
 
 C'est donc une confirmation que deux serveurs Infomaniak sont impliqués avant d'arriver sur les serveurs de Google. 
 
@@ -238,7 +238,7 @@ Sur la capture d'écran, on constate que le mail a été livré après 1 seconde
 
 Par chance, avant de terminer ce rapport, un e-mail d'arnaque a été reçu : 
 
-![](images\ex3_spam_5mio.JPG)
+![](images/ex3_spam_5mio.JPG)
 
 ```
 // E-mail d'arnaque
@@ -297,6 +297,6 @@ E-mail: usbankinfoing@gmail.com
 
 Mais quand on géolocalise l'adresse IP 209.85.220.65, on constate qu'elle est basée en Californie : 
 
-![](images\ex3_spam_geoloc.JPG)
+![](images/ex3_spam_geoloc.JPG)
 
 Nous déduisons donc que la personne n'est pas qui elle prétend être. 
