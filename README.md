@@ -66,7 +66,7 @@ sudo setoolkit
 
 La capture d'écran ci-dessous montre mon adresse IP pour le POST back ainsi que le site à cloner qui est `facebook`. On constate que l'outil indique ensuite que les informations envoyées depuis le site cloné apparaitront dans le terminal. 
 
-![](images\SEN_ex1_good_website.png)
+![](images/SEN_ex1_good_website.png)
 
 Après avoir cloné le site, il faut se connecter sur `http://192.168.1.113:80` via le navigateur web pour obtenir la page de connexion sur le site cloné. Dessus, il faut entrer des identifiants : 
 
